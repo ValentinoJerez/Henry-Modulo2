@@ -1,5 +1,7 @@
-(function () {
-  window.whiteboard = new window.EventEmitter();
+//Importo la funcion:
+const EventEmitter = require("./event-emitter")
+
+  let whiteboard = new EventEmitter();
 
   // Ultimately, the color of our stroke;
   var color;
@@ -61,7 +63,7 @@
   }
 
   resize();
-  window.addEventListener("resize", resize);
+  addEventListener("resize", resize);
 
   var currentMousePosition = { x: 0, y: 0 };
   var lastMousePosition = { x: 0, y: 0 };
@@ -106,4 +108,6 @@
       whiteboard.emit("draw", start, end, strokeColor);
     }
   };
-})();
+
+//Exporto la funcion:
+module.exports = whiteboard;
