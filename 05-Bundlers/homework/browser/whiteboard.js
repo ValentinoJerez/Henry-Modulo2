@@ -1,5 +1,8 @@
-//Importo la funcion:
-const EventEmitter = require("./event-emitter")
+//Importo la funcion ES:
+
+
+//Importo la funcion COMMON JS:
+//const EventEmitter = require("./event-emitter")
 
   let whiteboard = new EventEmitter();
 

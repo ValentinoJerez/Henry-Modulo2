@@ -1,5 +1,6 @@
  // our EventEmitter constructor function
-  function EventEmitter() {
+ //Exporto funcion por default ES:
+  export default function EventEmitter() {
     this.subscribers = {};
   }
 
@@ -35,5 +36,5 @@
     });
   };
 
-//Exporto la funcion COMPLETA
-module.exports = EventEmitter;
+//Exporto la funcion COMPLETA COMMON JS
+// module.exports = EventEmitter;

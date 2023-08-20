@@ -1,8 +1,11 @@
-//Importo la funcion:
+//Importo la funcion ES:
+
+
+//Importo la funcion COMMON JS:
 const whiteboard = require("./whiteboard");
 const io = require("socket.io-client");
  
-var socket = io(window.location.origin);
+var socket = io(window.location.origin); //Le indica a "io", a lo que tiene que estar atento
 
   socket.on("connect", function () {
     console.log("Connected!");
