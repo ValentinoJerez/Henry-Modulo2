@@ -4,6 +4,7 @@ export default function Card(props) {
    return (
       <div>
           <button onClick={onClose}>X</button>
+          {/* Aqui se renderiza el componente Character */}
          <h2>Name: {character.name}</h2>
          <h2>Status: {character.status}</h2>
          <h2>Species: {character.species}</h2>
